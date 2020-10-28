@@ -54,13 +54,13 @@ nohup python /mnt/pathogen1/rrodgers/Cenote-Taker2/run_cenote-taker2.0.1.py \
  --minimum_length_circular $MIN \
  --minimum_length_linear $MIN \
  --hhsuite_tool hhsearch \
- --handle_contigs_without_hallmark sketch_all > RNA_out.log 2>&1 & \\
-<b>outfile = Jeffrey_IBD_VLP_RNA_ct2_all.tsv</b>\\
+ --handle_contigs_without_hallmark sketch_all > RNA_out.log 2>&1 & <br><br>
+<b>outfile = Jeffrey_IBD_VLP_RNA_ct2_all.tsv</b><br><br>
 <b>5.  Perl scripts to happily marry CAT and CT2 results:</b><br>
 <b>5A.  Standardize Cenote-Taker2 output:</b><br>
 perl cenote-taker2_parser_v3.pl <output from Cenote-taker2> <Cenote-taker2 mode: DNA (default) or RNA><br>
 perl cenote-taker2_parser_v3.pl Jeffrey_IBD_VLP_RNA_ct2_all.tsv RNA<br>
-Your outfile is Jeffrey_IBD_VLP_RNA_ct2_all_clean_tax.txt</b> <br><br>
+<b>Your outfile is Jeffrey_IBD_VLP_RNA_ct2_all_clean_tax.txt</b> <br><br>
 perl cenote-taker2_parser_v3.pl Jeffrey_IBD_VLP_DNA_ct2_all.tsv DNA<br>
 <b>Your outfile is Jeffrey_IBD_VLP_DNA_ct2_all_clean_tax.txt</b> <br><br>
 <b>5B.  Standardize CAT output:</b> \
