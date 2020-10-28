@@ -12,3 +12,7 @@ sbatch virome_assembly_kallisto_htcf_mod2.sbatch<br>
 sbatch contig_annotation_htcf_mod_v2.sbatch<br>
 <b>NOTE: Please change this line to your user:</b><br>
 #SBATCH --mail-user=mihindu<br>
+
+<b>3. Run cenote-taker2 on Pathogen: DNA</b>\
+mkdir -p /path/to/your/project/<b>assembly/contig_dictionary</b>\
+cd /path/to/your/project/<b>assembly/contig_dictionary</b>\
