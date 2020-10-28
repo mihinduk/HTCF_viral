@@ -63,11 +63,11 @@ perl cenote-taker2_parser_v3.pl Jeffrey_IBD_VLP_RNA_ct2_all.tsv RNA<br>
 <b>Your outfile is Jeffrey_IBD_VLP_RNA_ct2_all_clean_tax.txt</b> <br><br>
 perl cenote-taker2_parser_v3.pl Jeffrey_IBD_VLP_DNA_ct2_all.tsv DNA<br>
 <b>Your outfile is Jeffrey_IBD_VLP_DNA_ct2_all_clean_tax.txt</b> <br><br>
-<b>5B.  Standardize CAT output:</b> \
+<b>5B.  Standardize CAT output:</b><br>
 perl cat_taxonomy_supplement.pl <output from CAT (contig.taxonomy)> <flye assembler outfile (assembly_info.txt)> <CAT.scores from CAT><br>
 perl cat_taxonomy_supplement.pl contig.taxonomy assembly_info.txt CAT.scores<br>
 <b>Your parsed contig taxonomy file is: contig.taxonomy_clean_tax.txt</b> <br><br>
-<b>5C.  Merge CAT and CT2 output</b> <br><br>
+<b>5C.  Merge CAT and CT2 output</b><br>
 perl cenote-taker2_cat_taxonomy_merger.pl <parsed DNA output from Cenote-taker2> <parsed RNA output from Cenote-taker2> <parsed output from CAT> <base name for outfiles><br>
 perl cenote-taker2_cat_taxonomy_merger.pl Jeffrey_IBD_VLP_DNA_ct2_all_clean_tax.txt Jeffrey_IBD_VLP_RNA_ct2_all_clean_tax.txt contig.taxonomy_clean_tax.txt Jeffrey_IBD_VLP_CAT_ct2<br>
 <b>Your R taxonomy infile is Jeffrey_IBD_VLP_CAT_ct2_CT2_CAT_contig_taxonomy.txt</b> 
